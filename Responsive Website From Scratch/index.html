@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Foods</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="active" id="navbar">
+            <a href="#" class="logo">Good<span>Foods</span></a>
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <span class="menuIcon" onclick="menuToggle();"></span>
+        </header>
+        <div class="content">
+            <div class="bannerText" id="slideshowText">
+                <div class="active">
+                    <h2>EAT Healthy<br>Stay Healthy</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nesciunt, ut facilis libero recusandae ratione voluptatibus quam reprehenderit sint sapiente similique, iusto laboriosam cum doloremque.</p>
+                    <a ref="#">Read More</a>
+                </div>
+                <div>
+                    <h2>Eat Your<br>Veggies</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nesciunt, ut facilis libero recusandae ratione voluptatibus quam reprehenderit sint sapiente similique, iusto laboriosam cum doloremque.</p>
+                    <a ref="#">Read More</a>
+                </div>
+                <div>
+                    <h2>Good Food<br>Good Mood</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nesciunt, ut facilis libero recusandae ratione voluptatibus quam reprehenderit sint sapiente similique, iusto laboriosam cum doloremque.</p>
+                    <a ref="#">Read More</a>
+                </div>  
+            </div>
+            <div class="bannerImg" id="slideshow">
+                <img src="img1.jpg" class="active">
+                <img src="img2.jpg">
+                <img src="img3.jpg">
+            </div>
+        </div>
+        <div class="icons">
+            <ul class="sci">
+                <li><a href="#"><img src="facebook.png"></a></li>
+                <li><a href="#"><img src="twitter.png"></a></li>
+                <li><a href="#"><img src="instagram.png"></a></li>
+            </ul>
+            <ul class="controls">
+                <li><a><img src="left.png" onclick="prevSlide();prevSlideText();"></a></li>
+                <li><a><img src="right.png" onclick="nextSlide();nextSlideText();"></a></li>
+            </ul>
+        </div>
+    </div>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>
